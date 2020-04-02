@@ -16,6 +16,10 @@ const components = {
       return <pre {...preProps} />
     }
   },
+  Example: () => (
+    <div style={{ border: '3px solid blue' }}>Example component</div>
+  ),
+  Test: () => <div style={{ border: '3px solid green' }}>Test component</div>,
 }
 export const wrapRootElement = ({ element }) => (
   <MDXProvider components={components}>{element}</MDXProvider>
